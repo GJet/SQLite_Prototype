@@ -14,5 +14,5 @@ c = conn.cursor()
 
 for row in c.execute('SELECT * FROM variables ORDER BY var_name'):
         print(str(row[0]) + " = " + str(row[3]))
-
+print("Done")
 conn.close()
